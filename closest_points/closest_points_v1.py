@@ -88,33 +88,33 @@ def closest_pair(A):
 
     # --------------------------------
 
-    return divide_conquer_shortest_distance(merge_sort_generator(A,0))[-1]
+    return divide_conquer_shortest_distance(merge_sort_generator(A, 0))[-1]
 
 
 
-size = 40
-population = 10
-
-coords = [random.sample(range(size), 2) for _ in range(population)]
-
-for point in range(population):
-    for axis in range(2):
-        coords[point][axis] = coords[point][axis] + (random.randint(0,9) * .1)
-    coords[point] = tuple(coords[point])
-coords = tuple(coords)
-
-outer, inner = [], []
-for row in range(size):
-    for col in range(size):
-        inner.append("     ")
-    outer.append(inner)
-    inner = []
-
-for idx, xy in enumerate(coords):
-    outer[round(xy[-1])][round(xy[0])] = f"{round(xy[0], 2)},{round(xy[-1], 2)}"
-
-for row in range(len(outer)- 1, -1, -1):
-    print(" ".join(outer[row]))
+# size = 40
+# population = 10
+#
+# coords = [random.sample(range(size), 2) for _ in range(population)]
+#
+# for point in range(population):
+#     for axis in range(2):
+#         coords[point][axis] = coords[point][axis] + (random.randint(0,9) * .1)
+#     coords[point] = tuple(coords[point])
+# coords = tuple(coords)
+#
+# outer, inner = [], []
+# for row in range(size):
+#     for col in range(size):
+#         inner.append("     ")
+#     outer.append(inner)
+#     inner = []
+#
+# for idx, xy in enumerate(coords):
+#     outer[round(xy[-1])][round(xy[0])] = f"{round(xy[0], 2)},{round(xy[-1], 2)}"
+#
+# for row in range(len(outer)- 1, -1, -1):
+#     print(" ".join(outer[row]))
 
 # print(divide_conquer_shortest_distance(sorted_x)[-1])
-print(closest_pair(coords))
+# print(closest_pair(coords))
