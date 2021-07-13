@@ -1,5 +1,5 @@
 <h2>CLOSEST PAIR OF POINTS IN LINEARITHMIC TIME:</h2>
-![Screenshot](closest_points/closest_points/Untitled.png)
+![Screenshot](closest_points/Untitled.png)
 (problem considered by M. I. Shamos and D. Hoey in the early 1970s)
 https://www.codewars.com/kata/5376b901424ed4f8c20002b7/train/python
 This started as a Codewars challenge, but wound up becoming a big learning project, as initially,
